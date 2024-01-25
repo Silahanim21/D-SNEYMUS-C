@@ -2,7 +2,7 @@ import os
 import re
 from AnonXMusic.utils.inline.song import song_markup
 import yt_dlp
-from AnonXMusic import app
+from LOKESHXMUSIC import app
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.enums import ChatAction
@@ -21,21 +21,21 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 
 import config
-from AnonXMusic import YouTube, app
-from AnonXMusic.utils import seconds_to_min, time_to_seconds
-from AnonXMusic.utils.channelplay import get_channeplayCB
-from AnonXMusic.utils.decorators.language import language, languageCB
-from AnonXMusic.utils.decorators.play import PlayWrapper
-from AnonXMusic.utils.formatters import convert_bytes, formats
-from AnonXMusic.utils.inline import (
+from LOKESHXMUSIC import YouTube, app
+from LOKESHXMUSIC.utils import seconds_to_min, time_to_seconds
+from LOKESHXMUSIC.utils.channelplay import get_channeplayCB
+from LOKESHXMUSIC.utils.decorators.language import language, languageCB
+from LOKESHXMUSIC.utils.decorators.play import PlayWrapper
+from LOKESHXMUSIC.utils.formatters import convert_bytes, formats
+from LOKESHXMUSIC.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from AnonXMusic.utils.logger import play_logs
-from AnonXMusic.utils.stream.stream import stream
+from LOKESHXMUSIC.utils.logger import play_logs
+from LOKESHXMUSIC.utils.stream.stream import stream
 from config import *
 
 
@@ -49,22 +49,22 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from AnonXMusic import YouTube, app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.utils import seconds_to_min, time_to_seconds
-from AnonXMusic.utils.channelplay import get_channeplayCB
-from AnonXMusic.utils.decorators.language import languageCB
-from AnonXMusic.utils.decorators.play import PlayWrapper
-from AnonXMusic.utils.formatters import formats
-from AnonXMusic.utils.inline import (
+from LOKESHXMUSIC import YouTube, app
+from LOKESHXMUSIC.core.call import Anony
+from LOKESHXMUSIC import seconds_to_min, time_to_seconds
+from LOKESHXMUSIC.utils.channelplay import get_channeplayCB
+from LOKESHXMUSIC.utils.decorators.language import languageCB
+from LOKESHXMUSIC.utils.decorators.play import PlayWrapper
+from LOKESHXMUSIC.utils.formatters import formats
+from LOKESHXMUSIC.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from AnonXMusic.utils.logger import play_logs
-from AnonXMusic.utils.stream.stream import stream
+from LOKESHXMUSIC.utils.logger import play_logs
+from LOKESHXMUSIC.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
