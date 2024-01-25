@@ -1,6 +1,6 @@
 import os
 import re
-from AnonXMusic.utils.inline.song import song_markup
+from LOKESHXMUSIC.utils.inline.song import song_markup
 import yt_dlp
 from LOKESHXMUSIC import app
 from pykeyboard import InlineKeyboard
