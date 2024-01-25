@@ -116,13 +116,12 @@ async def skip(cli, message: Message, _, chat_id):
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
         img = await get_thumb(videoid)
-        run = await message.reply_photo(
-            photo=img,
-            caption=_["stream_1"].format(
-                f"https://t.me/{app.username}?start=info_{videoid}",
-                title,
-                check[0]["dur"],
-                user,
+        run = await message.reply_text(
+                text=_["stream_1"].format(
+                    title,
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    check[0]["dur"],
+                    user,
             ),
             reply_markup=InlineKeyboardMarkup(button),
         )
@@ -149,13 +148,12 @@ async def skip(cli, message: Message, _, chat_id):
             return await mystic.edit_text(_["call_6"])
         button = stream_markup(_, chat_id)
         img = await get_thumb(videoid)
-        run = await message.reply_photo(
-            photo=img,
-            caption=_["stream_1"].format(
-                f"https://t.me/{app.username}?start=info_{videoid}",
-                title,
-                check[0]["dur"],
-                user,
+        run = await message.reply_text(
+                text=_["stream_1"].format(
+                    title,
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    check[0]["dur"],
+                    user,
             ),
             reply_markup=InlineKeyboardMarkup(button),
         )
@@ -218,11 +216,10 @@ async def skip(cli, message: Message, _, chat_id):
         else:
             button = stream_markup(_, chat_id)
             img = await get_thumb(videoid)
-            run = await message.reply_photo(
-                photo=img,
-                caption=_["stream_1"].format(
-                    f"https://t.me/{app.username}?start=info_{videoid}",
+            run = await message.reply_text(
+                text=_["stream_1"].format(
                     title,
+                    f"https://t.me/{app.username}?start=info_{videoid}",
                     check[0]["dur"],
                     user,
                 ),
