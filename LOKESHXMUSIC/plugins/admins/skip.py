@@ -118,11 +118,11 @@ async def skip(cli, message: Message, _, chat_id):
         img = await get_thumb(videoid)
         run = await message.reply_text(
                 text=_["stream_1"].format(
+             f"https://t.me/{app.username}?start=info_{videoid}",
                     title,
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     check[0]["dur"],
                     user,
-            ),
+                ),
             reply_markup=InlineKeyboardMarkup(button),
         )
         db[chat_id][0]["mystic"] = run
@@ -150,8 +150,8 @@ async def skip(cli, message: Message, _, chat_id):
         img = await get_thumb(videoid)
         run = await message.reply_text(
                 text=_["stream_1"].format(
+             f"https://t.me/{app.username}?start=info_{videoid}",
                     title,
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     check[0]["dur"],
                     user,
             ),
@@ -218,8 +218,8 @@ async def skip(cli, message: Message, _, chat_id):
             img = await get_thumb(videoid)
             run = await message.reply_text(
                 text=_["stream_1"].format(
+             f"https://t.me/{app.username}?start=info_{videoid}",
                     title,
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     check[0]["dur"],
                     user,
                 ),
