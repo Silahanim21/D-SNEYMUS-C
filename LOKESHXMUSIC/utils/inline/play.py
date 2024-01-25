@@ -53,9 +53,10 @@ def stream_markup_timer(_, chat_id, played, dur):
     else:
         bar = "—————————II"
     buttons = [
-        [
+        
             [ 
-                InlineKeyboardButton(text="TEKRAR", callback_data=f"ADMIN Replay|{chat_id}"),
+                InlineKeyboardButton(text="TEKRAR", callback_data=f"ADMIN Replay|{chat_id}"
+            ),
             ],
             [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
@@ -79,7 +80,8 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
        [ 
-                InlineKeyboardButton(text="TEKRAR", callback_data=f"ADMIN Replay|{chat_id}"),
+                InlineKeyboardButton(text="TEKRAR", callback_data=f"ADMIN Replay|{chat_id}"
+                ),
             ],
             [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
