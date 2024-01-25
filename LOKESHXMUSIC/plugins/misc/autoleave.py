@@ -29,7 +29,7 @@ async def auto_leave():
                                 and i.chat.id != -1001626004802
                                 and i.chat.id != -1001860470873
                             ):
-                                if left == 20:
+                                if left == 200:
                                     continue
                                 if not await is_active_chat(i.chat.id):
                                     try:
@@ -65,8 +65,8 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "» ʙᴏᴛ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʟᴇғᴛ ᴠɪᴅᴇᴏᴄʜᴀᴛ ʙᴇᴄᴀᴜsᴇ ɴᴏ ᴏɴᴇ ᴡᴀs ʟɪsᴛᴇɴɪɴɢ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
-                    )
+                        "👉 Görüntülü sohbette kimse dinlemediği için bot otomatik olarak görüntülü sohbeti açık bıraktı.",
+                       )
                 except:
                     continue
 
