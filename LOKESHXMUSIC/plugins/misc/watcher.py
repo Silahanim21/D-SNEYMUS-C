@@ -4,8 +4,8 @@ from pyrogram.types import Message
 from LOKESHXMUSIC import app
 from LOKESHXMUSIC.core.call import Anony
 
-welcome = 20
-close = 30
+welcome = 200
+close = 300
 
 
 @app.on_message(filters.video_chat_started, group=welcome)
