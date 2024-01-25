@@ -393,12 +393,11 @@ class Call(PyTgCalls):
                     )
                 img = await get_thumb(videoid)
                 button = stream_markup(_, chat_id)
-                run = await app.send_photo(
+                run = await app.send_message(
                     chat_id=original_chat_id,
-                    photo=img,
-                    caption=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
+                    text=_["stream_1"].format(
                         title,
+                        f"https://t.me/{app.username}?start=info_{videoid}",
                         check[0]["dur"],
                         user,
                     ),
@@ -440,12 +439,11 @@ class Call(PyTgCalls):
                 img = await get_thumb(videoid)
                 button = stream_markup(_, chat_id)
                 await mystic.delete()
-                run = await app.send_photo(
+                run = await app.send_message(
                     chat_id=original_chat_id,
-                    photo=img,
-                    caption=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
+                    text=_["stream_1"].format(
                         title,
+                        f"https://t.me/{app.username}?start=info_{videoid}",
                         check[0]["dur"],
                         user,
                     ),
@@ -527,12 +525,11 @@ class Call(PyTgCalls):
                 else:
                     img = await get_thumb(videoid)
                     button = stream_markup(_, chat_id)
-                    run = await app.send_photo(
+                    run = await app.send_message(
                         chat_id=original_chat_id,
-                        photo=img,
-                        caption=_["stream_1"].format(
-                            f"https://t.me/{app.username}?start=info_{videoid}",
+                        text=_["stream_1"].format(
                             title,
+                            f"https://t.me/{app.username}?start=info_{videoid}",
                             check[0]["dur"],
                             user,
                         ),
