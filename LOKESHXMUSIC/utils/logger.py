@@ -20,11 +20,6 @@ async def play_logs(message, streamtype):
     toplamgrup = len(await get_served_chats())
     aktifseslisayısı = len(await get_active_chats())
     aktifvideosayısı = len(await get_active_video_chats())
-    cpu = psutil.cpu_percent(interval=0.5)
-    mem = psutil.virtual_memory().percent
-    disk = psutil.disk_usage("/").percent
-    CPU = f"{cpu}%"
-    RAM = f"{mem}%"
 
 
     if await is_on_off(LOG):
