@@ -31,7 +31,7 @@ async def play_logs(message, streamtype):
 
 
 Grup: {message.chat.title} [`{message.chat.id}`]
-Üye Sayısı: 👉{sayı}
+Üye Sayısı:➜ {sayı}
 Kullanıcı: {message.from_user.mention}
 Kullanıcı Adı: @{message.from_user.username}
 Kullanıcı ID: `{message.from_user.id}`
@@ -39,8 +39,7 @@ Grup Linki: {chatusername}
 Sorgu: {message.text}
 
 
-
-Toplam Grup Sayısı: 👉{toplamgrup}
+Toplam Grup Sayısı:➜{toplamgrup}
 
 Aktif Ses: {aktifseslisayısı}  ❄️  Aktif Video: {aktifvideosayısı}"""
         if message.chat.id != LOGGER_ID:
@@ -50,7 +49,7 @@ Aktif Ses: {aktifseslisayısı}  ❄️  Aktif Video: {aktifvideosayısı}"""
                     f"{logger_text}",
                     disable_web_page_preview=True,
                 )
-                await app.set_chat_title(LOGGER_ID, f"DİSNEY AKTİF SES - {aktifseslisayısı}")
+                await app.set_chat_title(LOGGER_ID, f"AKTİF SES - {aktifseslisayısı}")
             except:
                 pass
         return
