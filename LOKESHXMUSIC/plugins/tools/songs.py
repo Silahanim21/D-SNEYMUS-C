@@ -22,7 +22,6 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 
 import config
 from LOKESHXMUSIC import YouTube, app
-from LOKESHXMUSIC.utils import seconds_to_min, time_to_seconds
 from LOKESHXMUSIC.utils.channelplay import get_channeplayCB
 from LOKESHXMUSIC.utils.decorators.language import language, languageCB
 from LOKESHXMUSIC.utils.decorators.play import PlayWrapper
@@ -51,7 +50,6 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from LOKESHXMUSIC import YouTube, app
 from LOKESHXMUSIC.core.call import Anony
-from LOKESHXMUSIC import seconds_to_min, time_to_seconds
 from LOKESHXMUSIC.utils.channelplay import get_channeplayCB
 from LOKESHXMUSIC.utils.decorators.language import languageCB
 from LOKESHXMUSIC.utils.decorators.play import PlayWrapper
