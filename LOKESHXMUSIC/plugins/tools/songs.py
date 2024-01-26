@@ -50,7 +50,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from LOKESHXMUSIC import YouTube, app
-from LOKESHXMUSIC.core.call import LOKESHXMUSIC
+from LOKESHXMUSIC.core.call import Anony
 from LOKESHXMUSIC import seconds_to_min, time_to_seconds
 from LOKESHXMUSIC.utils.channelplay import get_channeplayCB
 from LOKESHXMUSIC.utils.decorators.language import languageCB
