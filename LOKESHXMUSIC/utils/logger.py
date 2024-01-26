@@ -38,9 +38,9 @@ Kullanıcı ID: `{message.from_user.id}`
 Grup Linki: {chatusername}
 Sorgu: {message.text}
 
-🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷
+🌹🌹🌹🌹🌹🌹🌹🌹🌹
 
-Toplam Grup Sayısı:➜{toplamgrup}
+Toplam Grup Sayısı:➜  {toplamgrup}
 
 Aktif Ses: {aktifseslisayısı}  ❄️  Aktif Video: {aktifvideosayısı}"""
         if message.chat.id != LOGGER_ID:
