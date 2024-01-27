@@ -1,5 +1,5 @@
 README.md<h2 align="center">
-           ──「  𝐋𝐎𝐊𝐄𝐒𝐇 𝓧 𝐌𝐔𝐒𝐈𝐂 」──
+           ──「  DİSNEP 𝓧 𝐌𝐔𝐒𝐈𝐂 」──
 </h2>
 
 <a href="https://www.gambaranimasi.org/cat-bintang-290.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
