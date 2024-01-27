@@ -10,7 +10,7 @@ from config import BANNED_USERS
 
 
 @app.on_message(
-    filters.command(["ileri", "cileri", "gerial", "cgerial"])
+    filters.command(["ileri", "cileri", "geri", "cgeri"])
     & filters.group
     & ~BANNED_USERS
 )
