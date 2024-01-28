@@ -71,10 +71,9 @@ async def start_pm(client, message: Message, _):
                 ]
             )
             await m.delete()
-            await app.send_photo(
+            await app.send_message(
                 chat_id=message.chat.id,
-                photo=thumbnail,
-                caption=searched_text,
+                text=searched_text,
                 reply_markup=key,
             )
             if await is_on_off(2):
@@ -84,9 +83,8 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_photo(
-            photo=config.START_IMG_URL,
-            caption=_["start_2"].format(message.from_user.mention, app.mention),
+        await message.reply_text(
+            text=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(2):
@@ -135,9 +133,8 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
-                    caption=_["start_3"].format(
+                await message.reply_text(
+                    text=_["start_3"].format(
                         message.from_user.first_name,
                         app.mention,
                         message.chat.title,
