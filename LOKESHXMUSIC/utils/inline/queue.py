@@ -67,7 +67,7 @@ def aq_markup(_, chat_id):
     buttons = [
         [
             
-            
+            InlineKeyboardButton(text="▢", callback_data=f"kapandi|{chat_id}"),
         ],
     ]
     return buttons
