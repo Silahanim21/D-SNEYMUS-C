@@ -32,9 +32,8 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            return await message.reply_photo(
-                photo=config.START_IMG_URL,
-                caption=_["help_1"].format(config.SUPPORT_CHAT),
+            return await message.reply_text(
+                text=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
         if name[0:3] == "sud":
@@ -47,14 +46,12 @@ async def start_pm(client, message: Message, _):
             return
         if name[0:3] == "inf":
             m = await message.reply_text("🔎")
-            query = (str(name)).replace("info_", "", 1)
-            query = f"https://www.youtube.com/watch?v={query}"
+            query = ((name)).replace("info_", "", 1)
             results = VideosSearch(query, limit=1)
             for result in (await results.next())["result"]:
                 title = result["title"]
                 duration = result["duration"]
                 views = result["viewCount"]["short"]
-                thumbnail = result["thumbnails"][0]["url"].split("?")[0]
                 channellink = result["channel"]["link"]
                 channel = result["channel"]["name"]
                 link = result["link"]
