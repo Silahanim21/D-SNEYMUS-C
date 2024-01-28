@@ -166,11 +166,15 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
-        run = await message.reply_photo(
-            photo=config.STREAM_IMG_URL,
-            caption=_["stream_2"].format(user),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
+        run = await message.reply_text(
+                text=_["stream_2"].format(
+             f"https://t.me/{app.username}?start=info_{videoid}",
+                    title,
+                    check[0]["dur"],
+                    user,
+                ),
+                reply_markup=InlineKeyboardMarkup(button),
+            )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "tg"
     else:
@@ -189,12 +193,12 @@ async def skip(cli, message: Message, _, chat_id):
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":
             button = stream_markup(_, chat_id)
-            run = await message.reply_photo(
-                photo=config.TELEGRAM_AUDIO_URL
-                if str(streamtype) == "audio"
-                else config.TELEGRAM_VIDEO_URL,
-                caption=_["stream_1"].format(
-                    config.SUPPORT_CHAT, title[:23], check[0]["dur"], user
+            run = await message.reply_text(
+                text=_["stream_1"].format(
+             f"https://t.me/{app.username}?start=info_{videoid}",
+                    title,
+                    check[0]["dur"],
+                    user,
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -202,12 +206,12 @@ async def skip(cli, message: Message, _, chat_id):
             db[chat_id][0]["markup"] = "tg"
         elif videoid == "soundcloud":
             button = stream_markup(_, chat_id)
-            run = await message.reply_photo(
-                photo=config.SOUNCLOUD_IMG_URL
-                if str(streamtype) == "audio"
-                else config.TELEGRAM_VIDEO_URL,
-                caption=_["stream_1"].format(
-                    config.SUPPORT_CHAT, title[:23], check[0]["dur"], user
+            run = await message.reply_text(
+                text=_["stream_1"].format(
+             f"https://t.me/{app.username}?start=info_{videoid}",
+                    title,
+                    check[0]["dur"],
+                    user,
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
