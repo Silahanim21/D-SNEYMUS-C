@@ -40,10 +40,10 @@ def truncate(text):
 
 async def get_thumb(videoid):
     try:
-        if os.path.isfile(f"cache/{videoid}.jpg"):
-            return f"cache/{videoid}.jpg"
+        if os.path.isfile(f""):
+            return f""
 
-        url = f"https://www.youtube.com/watch?v={videoid}"
+        url = f""
         if 1==1:
             results = VideosSearch(url, limit=1)
             for result in (await results.next())["result"]:
@@ -71,12 +71,12 @@ async def get_thumb(videoid):
                 async with session.get(f"http://img.youtube.com/vi/{videoid}/maxresdefault.jpg") as resp:
                     if resp.status == 200:
                         f = await aiofiles.open(
-                            f"cache/thumb{videoid}.jpg", mode="wb"
+                            f"", mode=""
                         )
                         await f.write(await resp.read())
                         await f.close()
 
-            youtube = Image.open(f"cache/thumb{videoid}.jpg")
+            youtube = Image.open(f"")
             image1 = changeImageSize(1280, 720, youtube)
             image2 = image1.convert("RGBA")
             background = image2.filter(filter=ImageFilter.BoxBlur(30))
