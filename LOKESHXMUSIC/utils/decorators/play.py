@@ -72,9 +72,8 @@ def PlayWrapper(command):
                 if "stream" in message.command:
                     return await message.reply_text(_["str_1"])
                 buttons = botplaylist_markup(_)
-                return await message.reply_photo(
-                    photo=PLAYLIST_IMG_URL,
-                    caption=_["play_18"],
+                return await message.reply_text(
+                    text=_["play_18"],
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
         if message.command[0][0] == "c":
