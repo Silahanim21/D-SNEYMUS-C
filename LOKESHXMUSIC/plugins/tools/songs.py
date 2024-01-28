@@ -82,7 +82,6 @@ async def song_commad_private(client, message: Message, _):
             title,
             duration_min,
             duration_sec,
-            thumbnail,
             vidid,
         ) = await YouTube.details(url)
         if str(duration_min) == "None":
@@ -94,9 +93,9 @@ async def song_commad_private(client, message: Message, _):
 
         buttons = song_markup(_, vidid)
         await mystic.delete()
-        return await message.reply_photo(
+        return await message.reply_text(
             thumbnail,
-            caption=_["song_4"].format(title),
+            text=_["song_4"].format(title),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -122,9 +121,8 @@ async def song_commad_private(client, message: Message, _):
         )
     buttons = song_markup(_, vidid)
     await mystic.delete()
-    return await message.reply_photo(
-        thumbnail,
-        caption=_["song_4"].format(title),
+    return await message.reply_text(
+        text=_["song_4"].format(title),
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
