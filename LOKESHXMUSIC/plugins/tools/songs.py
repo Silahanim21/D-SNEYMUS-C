@@ -239,8 +239,7 @@ async def song_download_cb(client, CallbackQuery, _):
     duration = x["duration"]
     if stype == "video":
         thumb_image_path = await CallbackQuery.message.download()
-        width = CallbackQuery.message.photo.width
-        height = CallbackQuery.message.photo.height
+        
         try:
             file_path = await YouTube.download(
                 yturl,
