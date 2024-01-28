@@ -281,11 +281,15 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
-            run = await CallbackQuery.message.reply_photo(
-                photo=STREAM_IMG_URL,
-                caption=_["stream_2"].format(user),
-                reply_markup=InlineKeyboardMarkup(button),
-            )
+            run = await CallbackQuery.message.reply_text(
+                    text=_["stream_2"].format(
+                        f"https://t.me/{app.username}?start=info_{videoid}",
+                        title,
+                        duration,
+                        user,
+                    ),
+                    reply_markup=InlineKeyboardMarkup(button),
+                )
             db[chat_id][0]["mystic"] = run
             db[chat_id][0]["markup"] = "tg"
             await CallbackQuery.edit_message_text(txt, reply_markup=close_markup(_))
@@ -305,12 +309,12 @@ async def del_back_playlist(client, CallbackQuery, _):
                 return await CallbackQuery.message.reply_text(_["call_6"])
             if videoid == "telegram":
                 button = stream_markup(_, chat_id)
-                run = await CallbackQuery.message.reply_photo(
-                    photo=TELEGRAM_AUDIO_URL
-                    if str(streamtype) == "audio"
-                    else TELEGRAM_VIDEO_URL,
-                    caption=_["stream_1"].format(
-                        config.SUPPORT_CHAT, title[:23], duration, user
+                run = await CallbackQuery.message.reply_text(
+                    text=_["stream_1"].format(
+                        f"https://t.me/{app.username}?start=info_{videoid}",
+                        title,
+                        duration,
+                        user,
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -318,12 +322,12 @@ async def del_back_playlist(client, CallbackQuery, _):
                 db[chat_id][0]["markup"] = "tg"
             elif videoid == "soundcloud":
                 button = stream_markup(_, chat_id)
-                run = await CallbackQuery.message.reply_photo(
-                    photo=SOUNCLOUD_IMG_URL
-                    if str(streamtype) == "audio"
-                    else TELEGRAM_VIDEO_URL,
-                    caption=_["stream_1"].format(
-                        config.SUPPORT_CHAT, title[:23], duration, user
+                run = await CallbackQuery.message.reply_text(
+                    text=_["stream_1"].format(
+                        f"https://t.me/{app.username}?start=info_{videoid}",
+                        title,
+                        duration,
+                        user,
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
