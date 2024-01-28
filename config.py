@@ -32,7 +32,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO", 
-    "https://github.com/ayaz2112/Dene"
+    "https://github.com/ayaz2112/Elbash"
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -43,7 +43,7 @@ SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/golgeharemileri")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/golgeharemileri")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -52,7 +52,7 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "10"))
  
 
 # Telegram audio and video file size limit (in bytes)
@@ -66,7 +66,7 @@ STRING1 = getenv("STRING_SESSION","AQCHwcxO-cD96C1YoNhLpy1nDjlZutO6oBP6hOeCCZDve
 STRING2 = getenv("STRING_SESSION2", "AQCHwcxO-cD96C1YoNhLpy1nDjlZutO6oBP6hOeCCZDve-JO_UtJEYG4wDUbNwRh1X83v91dsQyPUierZcLeBaq7jGvjfrpQedn2nhLw9uTRznQ1xPKf_IVN9LAGK9uVlQoB3dUR3oh2N_wrpW3woCjfnY0p3Jthh1_ywAiweCSZZMb1d1WCspj7ZoZ7Bbjg6T_u9Uen7yyA3n_RxYfMP5ty0zII53p3UfGu8vQUoL4V7OCyQc3RoVIeOsxKPR0xngw5wNUdlTr4Ii3B942aVPy4lKdIYmqvsGeMQnSzscQggG9Q5z21xtiySgQjw7sQkEh66-qoqyXgPllrpU7YJbq1AAAAAZQUyKoA")
 STRING3 = getenv("STRING_SESSION3", "BACEusR7jyWj4ql1cmF6mOayl0jwWuH3An6VS-nvWaCRArW2hZz75EH-ekwBmGNQCTo_k3Dbn9WqaQ3GyFHaJbZ_S-UgnoldZDJ9RdGw9127O2UE0JSKNUjRO6RhC4F6HjPzKRojUZo4q5FcqwXXLfa4tVbw9cqlQFwSwyP7GNEkIj5d9Gb9g9Ya05dwBqqcOjkvtcQCK03XHRWRndB9TGUM1fLdRV9Bgvo9Uoz-vu5TfwP8cgRHsdjunpQBQuhx2nPaHdQEdtwhz1r1tG_aEgEIFyJV7G1v1XWYvSvA5KQD7NzAfYNvq3xMRVrdmOFjyDLMquAW-6ee0MjGXHwlT1nuAAAAAYgLxfEA")
 STRING4 = getenv("STRING_SESSION4", "")
-STRING5 = getenv("STRING_SESSION5", None)
+STRING5 = getenv("STRING_SESSION5", "")
 
 
 BANNED_USERS = filters.user()
