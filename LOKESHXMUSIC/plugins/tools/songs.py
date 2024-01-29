@@ -10,8 +10,7 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaAudio,
                             InputMediaVideo, Message)
 
-from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
-                    SONG_DOWNLOAD_DURATION_LIMIT)
+                    
 from LOKESHXMUSIC import YouTube, app
 from LOKESHXMUSIC.utils.decorators.language import language, languageCB
 from LOKESHXMUSIC.formatters import convert_bytes
