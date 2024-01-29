@@ -18,7 +18,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ce3421:ce3421@cluster0.5dx4
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1800))
 
-SONG_DOWNLOAD_DURATION=int(getenv("SONG_DOWNLOAD_DURATION", 1800))
+SONG_DOWNLOAD_DURATION =("90", ))
 
 # Chat id of a group for logging bot's activities
 LOGGER_ID = -1002112138580
