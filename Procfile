@@ -1,2 +1,2 @@
-start:production
+worker:production
 worker: bash start
