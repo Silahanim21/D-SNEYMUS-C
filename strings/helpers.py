@@ -1,14 +1,14 @@
 HELP_1 = """<b><u>ᴀᴅᴍɪɴ ᴋᴏᴍᴜᴛʟᴀʀı :</b></u>
 
-☞ /durdur /pause - Akışı duraklatır.
-☞ /devam /resume - Akışı devam ettirir.
-☞ /son - /end - Akışı Sonlandırır.
-☞ /atla /skip - Diğer parça ya atlar.
-☞ /ileri - Oynatılan parçayı ileri alır.
-☞ /gerial - Oynatılan parçayı geri alır.
-☞ /karistir /suffle- Sıraya alınan Parçaları karışık oynatır.
-☞ /tekrarla /loop - oynatılan parçayı istediğiniz kadar tekrar eder.
-☞ /reload - Admin Önbelleğini yeniler.
+╰☞ /durdur /pause - Akışı duraklatır.
+╰☞ /devam /resume - Akışı devam ettirir.
+╰☞ /son - /end - Akışı Sonlandırır.
+╰☞ /atla /skip - Diğer parça ya atlar.
+╰☞ /ileri - Oynatılan parçayı ileri alır.
+╰☞ /gerial - Oynatılan parçayı geri alır.
+╰☞ /karistir /suffle- Sıraya alınan Parçaları karışık oynatır.
+╰☞ /tekrarla /loop - oynatılan parçayı istediğiniz kadar tekrar eder.
+╰☞ /reload - Admin Önbelleğini yeniler.
 /reboot - Botu yeniden başlatır.
 """
 
@@ -17,9 +17,9 @@ HELP_2 = """
 
 ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
 
-☞ /yetkiver /auth - Grubunuzda yetkisiz üyeye yetki vererek botu kullandırabilirsiz.
-☞ /yetkial /unauth - Grubunuzdaki botu kullanan yetkisiz üyeden bot yetkisini alır.
-☞ /yetikiliste /authuser - Grubunuzdaki botu kullanan yetkili listesini açar.
+╰☞ /yetkiver /auth - Grubunuzda yetkisiz üyeye yetki vererek botu kullandırabilirsiz.
+╰☞ /yetkial /unauth - Grubunuzdaki botu kullanan yetkisiz üyeden bot yetkisini alır.
+╰☞ /yetikiliste /authuser - Grubunuzdaki botu kullanan yetkili listesini açar.
 """
 
 HELP_3 = """
