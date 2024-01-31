@@ -36,9 +36,7 @@ Kullanıcı Adı: @{message.from_user.username}
 Kullanıcı ID: `{message.from_user.id}`
 Grup Linki: {chatusername}
 Sorgu: {message.text}
-CPU: {CPU}
-RAM:  {RAM}
-DISK:  {DISK}
+
 🌹🌹🌹🌹🌹🌹🌹🌹🌹
 
 Toplam Grup Sayısı:➜  {toplamgrup}
