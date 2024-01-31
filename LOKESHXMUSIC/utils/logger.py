@@ -20,7 +20,10 @@ async def play_logs(message, streamtype):
     toplamgrup = len(await get_served_chats())
     aktifseslisayısı = len(await get_active_chats())
     aktifvideosayısı = len(await get_active_video_chats())
-
+CPU = f"{psutil.cpu_percent(interval=0.5)}%"
+    RAM = f"{psutil.virtual_memory().percent}%"
+    DISK = f"{psutil.disk_usage('/').percent}%"
+    
 
     if await is_on_off(LOG):
         if message.chat.username:
@@ -41,7 +44,9 @@ Sorgu: {message.text}
 🌹🌹🌹🌹🌹🌹🌹🌹🌹
 
 Toplam Grup Sayısı:➜  {toplamgrup}
-
+CPU {CPU}
+RAM  {RAM}
+DISK  {DISK}
 Aktif Ses: {aktifseslisayısı}  ❄️  Aktif Video: {aktifvideosayısı}"""
         if message.chat.id != LOGGER_ID:
             try:
