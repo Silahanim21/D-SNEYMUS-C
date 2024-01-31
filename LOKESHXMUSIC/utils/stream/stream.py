@@ -13,7 +13,7 @@ from LOKESHXMUSIC.utils.exceptions import AssistantErr
 from LOKESHXMUSIC.utils.inline import aq_markup, close_markup, stream_markup
 from LOKESHXMUSIC.utils.pastebin import AnonyBin
 from LOKESHXMUSIC.utils.stream.queue import put_queue, put_queue_index
-from LOKESHXMUSIC.utils.thumbnails import get_thumb
+
 
 
 async def stream(
