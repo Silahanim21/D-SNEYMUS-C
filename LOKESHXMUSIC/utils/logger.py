@@ -36,13 +36,13 @@ Kullanıcı Adı: @{message.from_user.username}
 Kullanıcı ID: `{message.from_user.id}`
 Grup Linki: {chatusername}
 Sorgu: {message.text}
-
-🌹🌹🌹🌹🌹🌹🌹🌹🌹
-
-Toplam Grup Sayısı:➜  {toplamgrup}
 CPU: {CPU}
 RAM:  {RAM}
 DISK:  {DISK}
+🌹🌹🌹🌹🌹🌹🌹🌹🌹
+
+Toplam Grup Sayısı:➜  {toplamgrup}
+
 Aktif Ses: {aktifseslisayısı}  ❄️  Aktif Video: {aktifvideosayısı}"""
         if message.chat.id != LOGGER_ID:
             try:
