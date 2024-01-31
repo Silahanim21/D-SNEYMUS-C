@@ -40,9 +40,9 @@ Sorgu: {message.text}
 🌹🌹🌹🌹🌹🌹🌹🌹🌹
 
 Toplam Grup Sayısı:➜  {toplamgrup}
-CPU {CPU}
-RAM  {RAM}
-DISK  {DISK}
+CPU: {CPU}
+RAM:  {RAM}
+DISK:  {DISK}
 Aktif Ses: {aktifseslisayısı}  ❄️  Aktif Video: {aktifvideosayısı}"""
         if message.chat.id != LOGGER_ID:
             try:
