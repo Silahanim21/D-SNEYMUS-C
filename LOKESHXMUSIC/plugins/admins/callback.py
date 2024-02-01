@@ -21,7 +21,6 @@ from LOKESHXMUSIC.utils.decorators.language import languageCB
 from LOKESHXMUSIC.utils.formatters import seconds_to_min
 from LOKESHXMUSIC.utils.inline import close_markup, stream_markup, stream_markup_timer
 from LOKESHXMUSIC.utils.stream.autoclear import auto_clean
-from LOKESHXMUSIC.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
@@ -218,7 +217,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     reply_markup=close_markup(_),
                 )
             try:
-                image = await YouTube.thumbnail(videoid, True)
+                image = None
             except:
                 image = None
             try:
@@ -226,7 +225,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
-            img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
                     f"https://t.me/{app.username}?start=info_{videoid}",
@@ -253,7 +251,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_6"])
             try:
-                image = await YouTube.thumbnail(videoid, True)
+                image = None
             except:
                 image = None
             try:
@@ -261,7 +259,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_6"])
             button = stream_markup(_, chat_id)
-            img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
                     f"https://t.me/{app.username}?start=info_{videoid}",
@@ -300,7 +297,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 image = None
             else:
                 try:
-                    image = await YouTube.thumbnail(videoid, True)
+                    image = None
                 except:
                     image = None
             try:
@@ -335,7 +332,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                 db[chat_id][0]["markup"] = "tg"
             else:
                 button = stream_markup(_, chat_id)
-                img = await get_thumb(videoid)
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
                         f"https://t.me/{app.username}?start=info_{videoid}",
