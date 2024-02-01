@@ -9,7 +9,6 @@ from LOKESHXMUSIC.utils.database import get_loop
 from LOKESHXMUSIC.utils.decorators import AdminRightsCheck
 from LOKESHXMUSIC.utils.inline import close_markup, stream_markup
 from LOKESHXMUSIC.utils.stream.autoclear import auto_clean
-from LOKESHXMUSIC.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
@@ -107,7 +106,7 @@ async def skip(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_7"].format(title))
         try:
-            image = await YouTube.thumbnail(videoid, True)
+            image = None
         except:
             image = None
         try:
@@ -115,7 +114,6 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
-        img = await get_thumb(videoid)
         run = await message.reply_text(
                 text=_["stream_1"].format(
              f"https://t.me/{app.username}?start=info_{videoid}",
@@ -139,7 +137,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_6"])
         try:
-            image = await YouTube.thumbnail(videoid, True)
+            image = None
         except:
             image = None
         try:
@@ -147,7 +145,6 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_6"])
         button = stream_markup(_, chat_id)
-        img = await get_thumb(videoid)
         run = await message.reply_text(
                 text=_["stream_1"].format(
              f"https://t.me/{app.username}?start=info_{videoid}",
@@ -184,7 +181,7 @@ async def skip(cli, message: Message, _, chat_id):
             image = None
         else:
             try:
-                image = await YouTube.thumbnail(videoid, True)
+                image = None
             except:
                 image = None
         try:
@@ -219,7 +216,6 @@ async def skip(cli, message: Message, _, chat_id):
             db[chat_id][0]["markup"] = "tg"
         else:
             button = stream_markup(_, chat_id)
-            img = await get_thumb(videoid)
             run = await message.reply_text(
                 text=_["stream_1"].format(
              f"https://t.me/{app.username}?start=info_{videoid}",
