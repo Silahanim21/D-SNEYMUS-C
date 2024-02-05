@@ -308,10 +308,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 button = stream_markup(_, chat_id)
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
-                        title,
-                        duration,
-                        user,
+                        config.SUPPORT_CHAT, title, duration, user
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -321,10 +318,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 button = stream_markup(_, chat_id)
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
-                        title,
-                        duration,
-                        user,
+                        config.SUPPORT_CHAT, title, duration, user
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
