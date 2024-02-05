@@ -514,10 +514,7 @@ class Call(PyTgCalls):
                     run = await app.send_message(
                         chat_id=original_chat_id,
                         text=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
-                            title,
-                            check[0]["dur"],
-                            user,
+                            config.SUPPORT_CHAT, title, check[0]["dur"], user
                         ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
