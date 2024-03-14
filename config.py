@@ -11,18 +11,18 @@ API_ID = "21197428"
 API_HASH = "67e076ff6d2aac96451cfb961a313287"
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "6901703185:AAH7pAp2MbydEbFO_Sw2cX3BzQLag4JqmB4")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ce3421:ce3421@cluster0.5dx4tcx.mongodb.net/test?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://aysen3434:aysen3434@cluster0.jisamwa.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1800))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = -1002143049926
+LOGGER_ID = -1002046801532
 LOG = 2
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID","6536661638" ))
+OWNER_ID = int(getenv("OWNER_ID","6966863980" ))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -39,7 +39,7 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/MassonlarArsive")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/MasonlarKurulus")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
@@ -62,7 +62,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
  
 # Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
-STRING1 = getenv("STRING_SESSION","")
+STRING1 = getenv("STRING_SESSION","AQG29MoAQg-8z9-alFgms1Ua1dtZV9dlBqHdmv6uG2ztWUDOMFay3rRJSA_UZ2_yK95PqK2c1sZ8uY3698qwIJ7JIk9sNsABbOQHnArFxXt-o2qeZKm3yLNme-03Qqq_Mcu97iMScrav-2I2vxqSWtue1LLrNFd-4AzC57ftVC7Kr4XEEd2KB8uLXat2ReEEBPOfgm3j9Viani0fNurTzEimyn7fz7fqpo1mZzEPdqdtv5A1BYROma2YiOmBJ8nKTsicpSK6d0XkZkTc-xeRUmUNHpQcXWiZZJx3P-SI31fy5qZjdLbK8IdvAEFbTD7CmH_e52LrUqhjLbPLjOE6cpmAzDbw0QAAAAGp-JdxAA")
 STRING2 = getenv("STRING_SESSION2", "")
 STRING3 = getenv("STRING_SESSION3", "")
 STRING4 = getenv("STRING_SESSION4", "")
