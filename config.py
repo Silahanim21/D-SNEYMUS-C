@@ -78,7 +78,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", ""
+    "START_IMG_URL", "https://pixabay.com/illustrations/youtube-social-media-logo-3d-2712573/"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL","https://images.app.goo.gl/ABpnemRN6CpfopJs7"
