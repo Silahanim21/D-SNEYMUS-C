@@ -19,7 +19,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://aysen3434:aysen3434@cluster
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = -1002043981252
+LOGGER_ID = -1002063007271
 LOG = 2
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID","7037109525" ))
@@ -52,7 +52,7 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "45d90a8278974cbba83a8ff
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "10"))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "20"))
  
 
 # Telegram audio and video file size limit (in bytes)
@@ -78,7 +78,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://images.app.goo.gl/ABpnemRN6CpfopJs7"
+    "START_IMG_URL", ""
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL","https://images.app.goo.gl/ABpnemRN6CpfopJs7"
