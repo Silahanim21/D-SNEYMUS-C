@@ -16,7 +16,7 @@ from pyrogram.types import (
 )
 
 ############
-SONG_DOWNLOAD_DURATION_LIMIT = 60000
+SONG_DOWNLOAD_DURATION_LIMIT = 600
 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
@@ -70,7 +70,7 @@ from config import BANNED_USERS, lyrical
 # Song Module
 
 
-@app.on_message(filters.command("indir") & filters.private & ~BANNED_USERS)
+@app.on_message(filters.command("indir", "bul", "song", "video") & filters.private & ~BANNED_USERS)
 @language
 async def song_commad_private(client, message: Message, _):
     await message.delete()
