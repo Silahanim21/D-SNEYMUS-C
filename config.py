@@ -78,13 +78,13 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://pixabay.com/illustrations/youtube-social-media-logo-3d-2712573/"
+    "START_IMG_URL", "https://www.alraialmasryeg.com/wp-content/uploads/2024/03/7-800x394-1-768x378.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL","https://images.app.goo.gl/ABpnemRN6CpfopJs7"
+    "PING_IMG_URL","https://www.alraialmasryeg.com/wp-content/uploads/2024/03/7-800x394-1-768x378.jpg"
 )
 PLAYLIST_IMG_URL = ""
-STATS_IMG_URL = "https://images.app.goo.gl/ABpnemRN6CpfopJs7"
+STATS_IMG_URL = "https://www.alraialmasryeg.com/wp-content/uploads/2024/03/7-800x394-1-768x378.jpg"
 TELEGRAM_AUDIO_URL = ""
 TELEGRAM_VIDEO_URL = ""
 STREAM_IMG_URL = ""
