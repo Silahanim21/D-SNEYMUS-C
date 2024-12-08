@@ -32,14 +32,14 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO", 
-    "https://github.com/Ayaz342121/Resimsiz-muzik"
+    "https://github.com/Silahanim21/D-SNEYMUS-C"
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/disneykomutt")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/whiskeyclubb")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -77,21 +77,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://www.alraialmasryeg.com/wp-content/uploads/2024/03/7-800x394-1-768x378.jpg"
-)
+    START_IMG_URL = getenv("START_IMG_URL", "https://envs.sh/YsA.jpg")
+
 PING_IMG_URL = getenv(
-    "PING_IMG_URL","https://www.alraialmasryeg.com/wp-content/uploads/2024/03/7-800x394-1-768x378.jpg"
+    "PING_IMG_URL","https://envs.sh/YsA.jpg"
 )
-PLAYLIST_IMG_URL = ""
+PLAYLIST_IMG_URL = "https://envs.sh/YsA.jpg"
 STATS_IMG_URL = "https://www.alraialmasryeg.com/wp-content/uploads/2024/03/7-800x394-1-768x378.jpg"
-TELEGRAM_AUDIO_URL = ""
-TELEGRAM_VIDEO_URL = ""
-STREAM_IMG_URL = ""
+TELEGRAM_AUDIO_URL = "https://envs.sh/YsA.jpg"
+TELEGRAM_VIDEO_URL = "https://envs.sh/YsA.jpg"
+STREAM_IMG_URL = "https://envs.sh/YsA.jpg"
 SOUNCLOUD_IMG_URL = ""
 YOUTUBE_IMG_URL = ""
 SPOTIFY_ARTIST_IMG_URL = ""
 SPOTIFY_ALBUM_IMG_URL = ""
-SPOTIFY_PLAYLIST_IMG_URL = ""
+SPOTIFY_PLAYLIST_IMG_URL = "https://envs.sh/YsA.jpg"
 
 
 def time_to_seconds(time):
