@@ -36,7 +36,7 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
         [
-            InlineKeyboardButton(text=_["S_B_8"], url=https://github.com/Silahanim21/rep1),
+                        InlineKeyboardButton(text="𝙆𝙐𝙈𝙎𝘼𝙇 𝙓 𝙏𝙀𝘼𝙈", url=f"https://github.com/Silahanim21/rep1"),
         ],
      ]
     return buttons
